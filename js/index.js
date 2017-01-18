@@ -20,46 +20,27 @@ $(function(){
 
 
 
-
-$(".slider-pokemon").slick({
-
-    autoplay: true,
-    dots: true,
-    customPaging : function(slider, i) {
-        var thumb = $(slider.$slides[i]).data('thumb');
-        return '<a><img src="'+thumb+'"></a>';
-    },
-
-    responsive: [{ 
-        breakpoint: 500,
-        settings: {
-            dots: false,
-            arrows: false,
-            infinite: false,
-            slidesToShow: 2,
-            slidesToScroll: 2
-        } 
-    }]
-});
-
-
-// simpson slider
-$('.slider-for').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: '.slider-nav'
-});
+// city slider
 $('.slider-nav').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    asNavFor: '.slider-for',
+    asNavFor: '.slider-nav2',
     dots: false,
     centerMode: true,
     focusOnSelect: true,
     autoplay: false,
 });
+$('.slider-nav2').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '.slider-nav',
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true,
+    autoplay: false,
+    arrows : false,
+});
+
 
 
 $( document ).ready(function() {
