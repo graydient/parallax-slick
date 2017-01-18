@@ -45,11 +45,11 @@ footer a:hover {
 $c1: #cee5ea;
 $c2: #efdfda;
 
-.slider {
+.slider-pokemon {
     width: auto;
     margin: 30px 50px 50px;
   
-}
+
 
 .slick-slide {
     background: $c1;
@@ -74,3 +74,73 @@ $c2: #efdfda;
 .slick-slide:nth-child(odd) {
      background: $c2;
 }
+
+}
+
+
+// simpsons slider 
+.slick-simpsons {
+
+  .container {
+    width: 700px;
+    height: 200px;
+    margin: 40px auto;
+  }
+
+  .block-media {
+    width: 350px;
+    height: 200px;
+    display: inline-block;
+    float: left;
+  }
+
+  .block-text {
+    box-sizing: border-box;
+    width: 350px;
+    height: 200px;
+    background-color: #2c3e50;
+    display: inline-block;
+    float: left;
+  }
+
+  // Content
+  .carousel-images {
+    & > .slick-list {
+      padding: 0 !important;
+      & > .slick-slide {
+        width: 350px !important;
+      }
+    }
+    & > .slick-prev {
+      left: 10px;
+    }
+    & > .slick-next {
+      right: 10px;
+    }
+    & > .slick-dots {
+      bottom: -10px;
+      & > li button:before {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .carousel-text {
+    font-weight: 100;
+    padding: 20px;
+    .title {
+      color: #bdc3c7;
+      font-size: 15px;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+    .headline {
+      color: #fff;
+      text-align: justify;
+      font-size: 12px;
+    }
+  }
+
+}
+
+
