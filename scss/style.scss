@@ -81,6 +81,9 @@ $c2: #efdfda;
 // simpsons slider 
 .slick-simpsons {
 
+  .slick-prev {
+    z-index: 9;
+  }
   .container {
     width: 700px;
     height: 200px;
